@@ -5,8 +5,8 @@
   import { tenantOf } from '#lib/kb/locales';
   import { splitTicket, type Problem } from '#lib/kb/problems';
 
-  // `tickets`: the issue that now owns each problem, as a link.
-  let { ticket, tickets }: { ticket: number; tickets: Record<Problem, { label: string; href: string }> } = $props();
+  // `tickets`: the issue that now owns each problem, as a link, with its state in words.
+  let { ticket, tickets }: { ticket: number; tickets: Record<Problem, { label: string; href: string; state?: string }> } = $props();
 
   const split = $derived(splitTicket(reports as Report[], ticket, tenantOf, notes.oneDayMove));
   const counted = $derived(split.groups.reduce((n, g) => n + g.reports.length, 0));
@@ -30,7 +30,7 @@
         <td>{g.tenants}</td>
         <td>{g.firstSeen} → {g.lastSeen}</td>
         <td>
-          {#if g.problem !== 'unplaced' && tickets[g.problem]}<a href={tickets[g.problem].href}>{tickets[g.problem].label}</a>{:else}none yet{/if}
+          {#if g.problem !== 'unplaced' && tickets[g.problem]}<a href={tickets[g.problem].href}>{tickets[g.problem].label}</a>{tickets[g.problem].state ? ` · ${tickets[g.problem].state}` : ''}{:else}none yet{/if}
         </td>
       </tr>
     {/each}
