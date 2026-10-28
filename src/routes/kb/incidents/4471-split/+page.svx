@@ -9,6 +9,7 @@ signature: v1.eyJzdWIiOiIzNDY4IiwiYXVkIjoiY2hhbGxlbmdlOndoYXQtaXQtc2hvd3MiLCJpYX
 
 <script>
   import ProblemTable from '#lib/kb/ProblemTable.svelte';
+  import CauseTable from '#lib/kb/CauseTable.svelte';
   import Callout from '#lib/kb/Callout.svelte';
   import RenderStamp from '#lib/kb/RenderStamp.svelte';
 
@@ -29,6 +30,13 @@ open. The parser fix does not change it, so do not close new one-day reports aga
 ## What #4471 holds
 
 <ProblemTable ticket={4471} {tickets} />
+
+### The desk's own view
+
+The desk files reports by tenant, so its table keeps the one-day reports under `parser` and
+footnotes them. Ticket #1 carries this count. Ticket #3 counts the one-day reports on their own.
+
+<CauseTable ticket={4471} />
 
 ## The three problems
 

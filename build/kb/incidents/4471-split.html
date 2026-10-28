@@ -9,17 +9,18 @@
 		<link href="../../_app/immutable/chunks/B2Ul7l_u.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/BCPXOG7W.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/Dh1V97Jm.js" rel="modulepreload">
-		<link href="../../_app/immutable/entry/app.BLyayObV.js" rel="modulepreload">
+		<link href="../../_app/immutable/entry/app.BJbwbATl.js" rel="modulepreload">
 		<link href="../../_app/immutable/nodes/0.C9KfiiPz.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/DK3Fl9T5.js" rel="modulepreload">
-		<link href="../../_app/immutable/nodes/5.DvAYnb-u.js" rel="modulepreload">
-		<link href="../../_app/immutable/chunks/BUs16P3E.js" rel="modulepreload">
+		<link href="../../_app/immutable/nodes/5.DmhVVIwk.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/BOckTAAm.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/BTPwLomz.js" rel="modulepreload">
-		<link href="../../_app/immutable/chunks/CVBzP17p.js" rel="modulepreload">
+		<link href="../../_app/immutable/chunks/CVzl_KNK.js" rel="modulepreload">
 		<link href="../../_app/immutable/chunks/BIy4WKJS.js" rel="modulepreload">
 		<!--e2jw2j--><!----><title>#4471 · three problems, not one · support kb</title>
 		<link href="../../_app/immutable/assets/runbook.COyw0cbZ.css" rel="stylesheet">
 		<link href="../../_app/immutable/assets/Callout.AbLv9dM_.css" rel="stylesheet">
+		<link href="../../_app/immutable/assets/CauseTable.DuKfINX_.css" rel="stylesheet">
 		<link href="../../_app/immutable/assets/_page.Be6fVOMQ.css" rel="stylesheet">
   </head>
   <body>
@@ -27,7 +28,8 @@
 queued. The reports say otherwise. Read by tenant, booking form and channel, and with the body of
 each report read, the ticket holds three problems. Each one now has its own ticket.</p> <aside class="warn svelte-17bri61"><!---->Engineering closed #4471 on 5 October. That settles two of the three problems: the parser is fixed,
 and the hint will not be fixed because the booking-v3 form is retired. The one-day problem is still
-open. The parser fix does not change it, so do not close new one-day reports against #4471.<!----></aside><!----> <h2>What #4471 holds</h2> <p class="sum svelte-1op6c6"><strong>412</strong> reports merged into #4471 · <strong>3</strong> problems</p> <table><thead><tr><th>problem</th><th>reports</th><th>tenants</th><th>seen</th><th>ticket</th></tr></thead><tbody><!--[--><tr class="svelte-1op6c6"><td class="svelte-1op6c6"><code>parser</code></td><td class="svelte-1op6c6">374</td><td class="svelte-1op6c6">11</td><td class="svelte-1op6c6">2026-04-01 → 2026-10-04</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/shawky84/mega-support-kb/issues/1">#1</a> · fixed<!--]--></td></tr><tr class="svelte-1op6c6"><td class="svelte-1op6c6"><code>hint</code></td><td class="svelte-1op6c6">33</td><td class="svelte-1op6c6">3</td><td class="svelte-1op6c6">2026-04-17 → 2026-09-22</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/shawky84/mega-support-kb/issues/2">#2</a> · won't fix<!--]--></td></tr><tr class="svelte-1op6c6"><td class="svelte-1op6c6"><code>one-day</code></td><td class="svelte-1op6c6">5</td><td class="svelte-1op6c6">5</td><td class="svelte-1op6c6">2026-04-02 → 2026-10-04</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/shawky84/mega-support-kb/issues/3">#3</a> · open<!--]--></td></tr><!--]--></tbody></table> <!--[-1--><!--]--><!----> <h2>The three problems</h2> <h3><code>parser</code> · the shared parser reads every date month first</h3> <p>A day-first tenant writes the 7th of April as 07/04. The shared parser reads it as 4 July. The
+open. The parser fix does not change it, so do not close new one-day reports against #4471.<!----></aside><!----> <h2>What #4471 holds</h2> <p class="sum svelte-1op6c6"><strong>412</strong> reports merged into #4471 · <strong>3</strong> problems</p> <table><thead><tr><th>problem</th><th>reports</th><th>tenants</th><th>seen</th><th>ticket</th></tr></thead><tbody><!--[--><tr class="svelte-1op6c6"><td class="svelte-1op6c6"><code>parser</code></td><td class="svelte-1op6c6">374</td><td class="svelte-1op6c6">11</td><td class="svelte-1op6c6">2026-04-01 → 2026-10-04</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/shawky84/mega-support-kb/issues/1">#1</a> · fixed<!--]--></td></tr><tr class="svelte-1op6c6"><td class="svelte-1op6c6"><code>hint</code></td><td class="svelte-1op6c6">33</td><td class="svelte-1op6c6">3</td><td class="svelte-1op6c6">2026-04-17 → 2026-09-22</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/shawky84/mega-support-kb/issues/2">#2</a> · won't fix<!--]--></td></tr><tr class="svelte-1op6c6"><td class="svelte-1op6c6"><code>one-day</code></td><td class="svelte-1op6c6">5</td><td class="svelte-1op6c6">5</td><td class="svelte-1op6c6">2026-04-02 → 2026-10-04</td><td class="svelte-1op6c6"><!--[0--><a href="https://github.com/shawky84/mega-support-kb/issues/3">#3</a> · open<!--]--></td></tr><!--]--></tbody></table> <!--[-1--><!--]--><!----> <h3>The desk’s own view</h3> <p>The desk files reports by tenant, so its table keeps the one-day reports under <code>parser</code> and
+footnotes them. Ticket #1 carries this count. Ticket #3 counts the one-day reports on their own.</p> <p class="sum svelte-12oyimm"><strong>412</strong> reports merged into #4471 · <strong>2</strong> causes</p> <table><thead><tr><th>cause</th><th>reports</th><th>tagged as</th><th>tenants</th><th>seen</th><th></th></tr></thead><tbody><!--[--><tr class="svelte-12oyimm"><td class="svelte-12oyimm"><code>parser</code></td><td class="svelte-12oyimm">379</td><td class="tags svelte-12oyimm">parser ×356 · hint ×23</td><td class="svelte-12oyimm">11</td><td class="svelte-12oyimm">2026-04-01 → 2026-10-04</td><td class="svelte-12oyimm">#4471</td></tr><tr class="svelte-12oyimm wrong"><td class="svelte-12oyimm"><code>hint</code></td><td class="svelte-12oyimm">33</td><td class="tags svelte-12oyimm">hint ×18 · parser ×15</td><td class="svelte-12oyimm">3</td><td class="svelte-12oyimm">2026-04-17 → 2026-09-22</td><td class="svelte-12oyimm">not this ticket — no ticket of its own</td></tr><!--]--></tbody></table> <!--[--><!--[0--><p class="note svelte-12oyimm">5 reports read as a one-day move; filed under <code>parser</code> by tenant.</p><!--]--><!--[-1--><!--]--><!--]--><!----> <h2>The three problems</h2> <h3><code>parser</code> · the shared parser reads every date month first</h3> <p>A day-first tenant writes the 7th of April as 07/04. The shared parser reads it as 4 July. The
 report shows the same two numbers, swapped: “Our 7 April reminder went out on 4 July.” It reaches
 every day-first tenant through the app, email and the booking-v2 form. Ticket <a href="https://github.com/shawky84/mega-support-kb/issues/1" rel="nofollow">#1</a>, <strong>fixed</strong>: <code>fix(dates): parse dd/mm for eu locales</code>.</p> <h3><code>hint</code> · booking-v3 tells people to type the month first</h3> <p>The booking-v3 form prints <code>MM/DD/YYYY</code> under its date field, so people type the month first, as
 told. The form then reads the date the tenant’s way, day first. The report looks the same as a
@@ -44,16 +46,16 @@ and channel (<code>causes.ts</code>), and read the body for a one-day move.</li>
 			
 			<script>
 				{
-					__sveltekit_h7lm6q = {
+					__sveltekit_x6jrb0 = {
 						base: new URL("../..", location).pathname.slice(0, -1),
-						version: "1793177049326"
+						version: "1793177541545"
 					};
 
 					const element = document.currentScript.parentElement;
 
 					import("../../_app/immutable/entry/start.CH5w6lId.js").then(async (kit) => {
-						kit.init(__sveltekit_h7lm6q);
-						const app = await import("../../_app/immutable/entry/app.BLyayObV.js");
+						kit.init(__sveltekit_x6jrb0);
+						const app = await import("../../_app/immutable/entry/app.BJbwbATl.js");
 						kit.start(app, element, {
 							node_ids: [0, 5],
 							data: [null,null],
